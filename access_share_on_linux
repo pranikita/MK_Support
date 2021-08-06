@@ -1,5 +1,8 @@
+#!/bin/bash
 apt-get update
 apt-get install cifs-utils -y
 mkdir /mnt/ProjectShare /mnt/SoftwareShare
 mount -t cifs //windows/ProjectShare /mnt/ProjectShare -o user=myusername,domain=campus,vers=1.0
 mount -t cifs //windows/SoftwareShare /mnt/SoftwareShare -o user=myusername,domain=campus,vers=1.0
+
+# for kerberos ref : https://centrify.force.com/support/Article/KB-18311-How-to-mount-a-CIFS-share-from-Linux-using-Kerberos/
