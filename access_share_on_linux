@@ -1,5 +1,5 @@
-sudo apt-get install cifs-utils -y
-sudo chmod u+s /sbin/mount.cifs /sbin/umount.cifs
-sudo mkdir /mnt/ProjectShare /mnt/SoftwareShare
+apt-get install cifs-utils -y
+chmod u+s /sbin/mount.cifs /sbin/umount.cifs
+mkdir /mnt/ProjectShare /mnt/SoftwareShare
 mount -t cifs //windows/ProjectShare /mnt/ProjectShare -o user=myusername,domain=campus,vers=1.0
 mount -t cifs //windows/SoftwareShare /mnt/SoftwareShare -o user=myusername,domain=campus,vers=1.0
